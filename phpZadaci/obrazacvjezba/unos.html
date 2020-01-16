@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Obrazac:</h1>
+    <form class="" action="obrada.php" method="get">
+      Ime:<br/>
+      <input type="text" name="ime" />
+      <br/><br/>
+
+      Prezime:<br/>
+      <input type="text" name="prezime" />
+      <br/><br/>
+
+      Mail:<br/>
+      <input type="text" name="mail" />
+      <br/><br/>
+
+      <select name="predmet[]" multiple="multiple">
+        <option value="Mat">Matematika</option>
+        <option value="Fiz">Fizika</option>
+        <option value="Eng">Engleski</option>
+        <option value="PI">Programiranje za internet</option>
+      </select>
+      <br/><br/>
+
+      <select>
+        <option value="b1">Plava</option>
+        <option value="b2">Zelena</option>
+        <option value="b3">Narancasta</option>
+        <option value="b4">Crvena</option>
+      </select>
+      <br/><br/>
+
+      Spol:<br/>
+      <input type="radio" value="M" name="spol" /> muški<br/>
+      <input type="radio" value="Ţ" name="spol" /> ţenski
+      <br/><br/>
+
+      <input type="submit" value="Spremi" />
+    </form>
+  </body>
+</html>

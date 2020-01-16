@@ -1,0 +1,59 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Ucenik
+ * Date: 8.11.2019.
+ * Time: 12:23
+ */
+
+?>
+<html>
+<head>
+
+</head>
+<body>
+<form action="obrazac.php" method="post">
+
+    <label for="ime" > Ime:</label>
+	<input type="text" name="ime"/><br>
+
+    <label for="prez" >Prezime:</label>
+	<input type="text" name="prez"/><br>
+    <br>
+
+    <label for="skola">Idete li u skolu?</label>
+	<br>
+    <input type="radio" name="sk" value="D"/> Da<br>
+    <input type="radio" name="sk" value="N"/> Ne<br>
+    <br>
+
+    <label for="oib">OIB:</label>
+    <input type="password" name="oib"/>
+    <br>
+    <br>
+
+    <label for="predmet">Koji su vam predmeti najdrazi?</label>
+	<br>
+    <select name="predmet[]" multiple="multiple">
+        <option value="Mat">Matematika</option>
+        <option value="Fiz">Fizika</option>
+        <option value="Eng">Engleski</option>
+        <option value="PI">Programiranje za internet</option>
+    </select>
+    <br>
+    <br>
+
+    <label for="boja">Koji vam je boja najdraza?</label>
+    <select>
+        <option value="b1">Plava</option>
+        <option value="b2">Zelena</option>
+        <option value="b3">Narancasta</option>
+        <option value="b4">Crvena</option>
+    </select>
+    <br>
+    <br>
+	<button type="submit" name="salji" value="Posalji" onclick=""> Posalji </button>
+
+</form>
+</body>
+</html>
